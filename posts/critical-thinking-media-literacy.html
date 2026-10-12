@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debugging Information — Debug &amp; Grow</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../index.html" class="site-logo" aria-label="Debug and Grow home">
+      <span class="site-logo-prompt">
+        <span class="prompt-symbol">$</span> debug-and-grow<span class="cursor" aria-hidden="true"></span>
+      </span>
+      <span class="site-logo-sub">A developer's English journal</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="../index.html">~/home</a>
+      <a href="../index.html#evidence">./evidence</a>
+      <a href="../index.html#opinion" class="active">./opinion</a>
+      <a href="../index.html#about">./about</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="article-wrapper">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">~/home</a>
+        <span class="sep">›</span>
+        <a href="../index.html#opinion">./opinion</a>
+        <span class="sep">›</span>
+        <span>critical-thinking-media-literacy</span>
+      </nav>
+
+      <header class="article-header">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.9rem;flex-wrap:wrap;">
+          <p class="article-category" style="margin:0;">opinion · critical thinking · media literacy</p>
+          <span class="required-badge">Required Opinion Entry A</span>
+        </div>
+
+        <h1 class="article-title">
+          Debugging Information: Critical Thinking and Media Literacy as Developer Tools
+        </h1>
+
+        <p class="article-subtitle">
+          Topic: Critical Thinking and Media Literacy — Tools for Real Improvement.
+          A linter catches syntax errors. Critical thinking catches something more
+          expensive: the wrong idea running in production.
+        </p>
+
+        <div class="article-meta">
+          <time datetime="2026-10-11">2026-10-11</time>
+          <span class="dot">•</span>
+          <span>5 min read</span>
+          <span class="dot">•</span>
+          <span>opinion · required entry A</span>
+        </div>
+
+        <div class="tag-list" style="margin-top:1rem;">
+          <span class="tag green">critical-thinking</span>
+          <span class="tag cyan">media-literacy</span>
+          <span class="tag">opinion</span>
+          <span class="tag amber">required-A</span>
+        </div>
+      </header>
+
+      <article class="article-body">
+
+        <p>
+          <strong>Critical thinking</strong> is the ability to question information instead
+          of absorbing it. <strong>Media literacy</strong> is the ability to understand
+          how a message was constructed, who constructed it, and why. In my academic and
+          work environments, these are not soft skills filed under "nice to have." They
+          are the runtime validation layer for every decision I make — the equivalent of
+          input sanitization, but for ideas.
+        </p>
+
+        <h2>The bug that taught me this</h2>
+
+        <p>
+          As a software development apprentice, most of the information I consume arrives
+          through screens: tutorials, forums, documentation, social networks, and short
+          videos. During a recent project I solved a bug by copying a piece of code from
+          a forum. It worked, so I moved on. Days later that same code opened a hidden
+          security vulnerability. Nobody had taught me to distrust a fast answer. I had
+          to learn it from a real consequence.
+        </p>
+
+        <div class="terminal-block">
+          <div class="terminal-bar">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+            <span class="terminal-title">incident-report.log</span>
+          </div>
+          <div class="terminal-body"><span class="t-comment">// Root cause analysis</span>
+
+<span class="t-error">ERROR  security vulnerability detected in production</span>
+<span class="t-key">source</span>:   <span class="t-string">forum answer — unverified, undated, no version context</span>
+<span class="t-key">symptom</span>:  <span class="t-value">code worked locally, passed basic tests</span>
+<span class="t-key">root cause</span>: <span class="t-error">source was not evaluated before use</span>
+            <span class="t-error">no check: author credibility, date, version compatibility</span>
+            <span class="t-error">no check: security implications of the pattern</span>
+
+<span class="t-comment">// Lesson</span>
+<span class="t-warn">A fast answer that works is not the same as a correct answer.
+Untested input reaching production is a bug.
+Unquestioned information reaching a decision is the same bug.</span></div>
+        </div>
+
+        <p>
+          That incident taught me that media literacy is not a humanities concept that
+          applies to news and propaganda. It applies to <strong>any source of information</strong>
+          I allow into my decision-making process — including technical content. A tutorial
+          can be outdated. A forum answer can be wrong for my version. A viral opinion
+          can be emotionally convincing without being factually true. If I do not question
+          the source, I am not learning — I am accumulating borrowed decisions without
+          understanding their cost.
+        </p>
+
+        <h2>Why these skills drive improvement in any environment</h2>
+
+        <p>
+          Improvement — in a team, a classroom, or a codebase — depends on understanding
+          a problem before proposing a solution. A media-literate person applies the
+          same pre-processing that a good debugger does:
+        </p>
+
+        <div class="callout">
+          <p class="callout-title">The four questions I now ask before accepting information</p>
+          <ul>
+            <li><strong>Source:</strong> Who produced this, and what is their context?</li>
+            <li><strong>Evidence:</strong> What data supports this claim, and how was it collected?</li>
+            <li><strong>Omission:</strong> What is this source not saying, and why?</li>
+            <li><strong>Interest:</strong> What does the author gain if I believe this?</li>
+          </ul>
+        </div>
+
+        <p>
+          These questions transform a passive reader into someone who can propose
+          realistic improvements — because they are working from an accurate model
+          of the problem, not a convenient one.
+        </p>
+
+        <h2>How I apply this in my environment — three practices</h2>
+
+        <p>
+          In practice, I apply critical thinking and media literacy in three concrete ways
+          in my academic and professional context:
+        </p>
+
+        <p>
+          First, I <strong>verify documentation before sharing it</strong> with my team.
+          If I find an answer that solves a problem, I check the date, the version, and
+          the source reputation before forwarding it. This is the equivalent of writing
+          a test before merging a fix.
+        </p>
+
+        <p>
+          Second, I <strong>compare at least two independent sources</strong> before
+          adopting a new technology or approach. Consensus between independent sources
+          is not a guarantee, but it is a much stronger signal than one enthusiastic
+          blog post.
+        </p>
+
+        <p>
+          Third, I <strong>separate data from opinion</strong> when my team discusses
+          project changes. "This library is slow" is an opinion. "This library adds
+          200ms to our average response time in our benchmark" is data. Only the
+          second one can be evaluated, challenged, and acted on.
+        </p>
+
+        <div class="pull-quote">
+          "For a developer in training, critical thinking is what a linter is for code: it does not write the program for you, but it stops you from shipping errors you could have caught before they cost you something."
+        </div>
+
+        <h2>My position</h2>
+
+        <p>
+          Critical thinking and media literacy are not skills reserved for journalists
+          or researchers. They are operational tools for anyone who consumes information
+          in order to make decisions — which is every developer, every day. Promoting
+          them in my environment means asking better questions, correcting misinformation
+          respectfully, and showing others that doubting a source is not an act of
+          distrust. It is an act of respect for the truth — and for the people who will
+          have to live with the decisions made on its basis.
+        </p>
+
+        <p>
+          The digital world produces more content per second than any one person can
+          evaluate. That is not a reason to stop evaluating. It is the reason to get
+          better at it — faster.
+        </p>
+
+      </article>
+
+      <div class="article-tags">
+        <span>tags:</span>
+        <span class="tag green">critical-thinking</span>
+        <span class="tag cyan">media-literacy</span>
+        <span class="tag">opinion</span>
+        <span class="tag amber">required-A</span>
+      </div>
+
+      <nav class="post-nav" aria-label="Post navigation">
+        <a href="forum-green-workplace.html" class="post-nav-item">
+          <span class="post-nav-dir">← previous</span>
+          <span class="post-nav-title">Green Code: Forum Post</span>
+        </a>
+        <a href="crime-and-punishment-opinion.html" class="post-nav-item next">
+          <span class="post-nav-dir">next →</span>
+          <span class="post-nav-title">Legacy Code in Human Behavior</span>
+        </a>
+      </nav>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p><span class="footer-prompt">$</span> <strong>debug-and-grow</strong> &nbsp;·&nbsp; A developer's English journal</p>
+    <p style="margin-top:0.4rem;font-size:0.72rem;color:var(--text-faint);">© 2026 · Andrés Felipe Lozada Manzano · SENA Ficha 3388935</p>
+  </footer>
+
+</body>
+</html>

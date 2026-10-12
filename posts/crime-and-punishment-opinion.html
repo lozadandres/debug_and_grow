@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legacy Code in Human Behavior — Debug &amp; Grow</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../index.html" class="site-logo" aria-label="Debug and Grow home">
+      <span class="site-logo-prompt">
+        <span class="prompt-symbol">$</span> debug-and-grow<span class="cursor" aria-hidden="true"></span>
+      </span>
+      <span class="site-logo-sub">A developer's English journal</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="../index.html">~/home</a>
+      <a href="../index.html#evidence">./evidence</a>
+      <a href="../index.html#opinion" class="active">./opinion</a>
+      <a href="../index.html#about">./about</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="article-wrapper">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">~/home</a>
+        <span class="sep">›</span>
+        <a href="../index.html#opinion">./opinion</a>
+        <span class="sep">›</span>
+        <span>crime-and-punishment-opinion</span>
+      </nav>
+
+      <header class="article-header">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.9rem;flex-wrap:wrap;">
+          <p class="article-category" style="margin:0;">opinion · literature · social analysis</p>
+          <span class="required-badge">Required Opinion Entry B</span>
+        </div>
+
+        <h1 class="article-title">
+          Legacy Code in Human Behavior: What Crime and Punishment Reveals About the Workplace
+        </h1>
+
+        <p class="article-subtitle">
+          Topic: Crime and Punishment — social problems in work and academic contexts.
+          Dostoyevsky's novel is not about a murder. It is a technical analysis of what
+          happens when a person's internal logic is never reviewed, tested, or refactored.
+        </p>
+
+        <div class="article-meta">
+          <time datetime="2026-10-11">2026-10-11</time>
+          <span class="dot">•</span>
+          <span>7 min read</span>
+          <span class="dot">•</span>
+          <span>opinion · required entry B · personal and critical analysis</span>
+        </div>
+
+        <div class="tag-list" style="margin-top:1rem;">
+          <span class="tag purple">literature</span>
+          <span class="tag">social-analysis</span>
+          <span class="tag">workplace</span>
+          <span class="tag amber">required-B</span>
+          <span class="tag">Dostoyevsky</span>
+        </div>
+      </header>
+
+      <article class="article-body">
+
+        <div class="book-header">
+          <div class="book-cover" aria-hidden="true">
+            <span class="book-cover-title">Crime and Punishment</span>
+            <span class="book-cover-author">F. Dostoyevsky · 1866</span>
+          </div>
+          <div class="book-info">
+            <h3>Crime and Punishment</h3>
+            <p>
+              Fyodor Dostoyevsky · 1866 · Russian realist novel<br>
+              Social psychology · Moral philosophy · Poverty and power<br>
+              <em style="color:var(--text-muted);font-size:0.8rem;">
+                Note: This is not a summary. It is a personal and critical analysis of
+                the social problems the novel identifies and how they appear in contemporary
+                work and academic environments.
+              </em>
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Every software project eventually inherits code it did not write. Legacy code:
+          logic that was written in a different context, for different requirements, by
+          someone operating under pressures the current team cannot fully reconstruct.
+          It runs. It passes its original tests. And it causes problems nobody can trace
+          because nobody questions it anymore.
+        </p>
+
+        <p>
+          Raskolnikov, the protagonist of <em>Crime and Punishment</em>, is a person
+          running on legacy code. He has inherited a theory — built in desperation,
+          under conditions of extreme poverty and intellectual isolation — that divides
+          humanity into people who must obey moral rules and people who are permitted
+          to transgress them. He has never refactored this theory. He has never tested
+          it against external input. He has only extended it, patch by patch, until it
+          justifies a murder.
+        </p>
+
+        <h2>The core bug: the theory of the extraordinary person</h2>
+
+        <p>
+          Raskolnikov's theory is, at its root, a logic error that compiles cleanly:
+          <em>If the goal is great enough, the rules that apply to ordinary people
+          do not apply to me.</em> This reasoning is internally consistent — no syntax
+          errors. Its flaw is not structural; it is a wrong assumption at the root level.
+          The kind of bug that only surfaces in production.
+        </p>
+
+        <div class="pull-quote">
+          "The most dangerous person in a team is not the one who makes mistakes. It is the one whose internal logic has never been reviewed — and who has concluded they are exempt from review."
+        </div>
+
+        <p>
+          I have seen versions of this pattern in technical environments — subtler than
+          Raskolnikov's, but structurally identical. The senior developer who dismisses
+          code review because their experience makes the process unnecessary. The student
+          who plagiarizes because the assignment is beneath their real ability. The team
+          lead who cuts quality to meet a deadline and does not log the technical debt
+          because logging it would require acknowledging it. In each case, the underlying
+          logic is: <em>the rules exist for the others.</em>
+        </p>
+
+        <h2>Poverty and structural pressure: the root cause, not the excuse</h2>
+
+        <p>
+          A shallow reading of the novel stops at Raskolnikov's theory and judges it.
+          A more useful reading asks: where did this logic come from? Raskolnikov is
+          desperately poor. He has dropped out of university. He watches his family
+          sacrifice themselves financially for a future he is not sure he can deliver.
+          He lives in a city whose inequality is architectural — the wealthy and the
+          destitute share the same streets, the same staircases, the same air.
+        </p>
+
+        <p>
+          His theory of the extraordinary person is not pure arrogance. It is partially
+          a <strong>coping mechanism</strong> — a way of reframing humiliation as
+          superiority. He cannot fix his structural position, so he reconstructs his
+          identity around being above it. This matters enormously for anyone trying to
+          address destructive behavior in a work or academic environment.
+        </p>
+
+        <div class="terminal-block">
+          <div class="terminal-bar">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+            <span class="terminal-title">social-problems-mapping.log</span>
+          </div>
+          <div class="terminal-body"><span class="t-comment">// Social problems in the novel → contemporary equivalents</span>
+
+<span class="t-key">poverty / desperation</span>
+  → <span class="t-value">job insecurity · unpaid internships · wage theft</span>
+  → <span class="t-warn">root: structural, not individual</span>
+
+<span class="t-key">intellectual self-exemption</span>
+  → <span class="t-value">seniority entitlement · academic dishonesty</span>
+  → <span class="t-warn">root: unreviewed internal logic</span>
+
+<span class="t-key">institutional indifference</span>
+  → <span class="t-value">bureaucracies that process people without helping them</span>
+  → <span class="t-warn">root: systems optimized for efficiency, not outcomes</span>
+
+<span class="t-key">social isolation</span>
+  → <span class="t-value">remote work alienation · exclusion from decisions</span>
+  → <span class="t-warn">root: communication structures that don't scale to humans</span>
+
+<span class="t-key">guilt without processing</span>
+  → <span class="t-value">burnout · imposter syndrome · unaddressed moral injury</span>
+  → <span class="t-warn">root: no safe channel for acknowledging error</span></div>
+        </div>
+
+        <h2>Sonya: the pattern that does not crash under load</h2>
+
+        <p>
+          The character I find most instructive is not Raskolnikov but Sonya.
+          She lives in more extreme poverty than he does, has fewer choices, and has
+          been pushed into circumstances far more degrading. She has every structural
+          reason to build the same self-exemption theory. She does not.
+        </p>
+
+        <p>
+          In software terms, Sonya is the system that remains stable under conditions
+          that would cause others to fail. Not because she is simple — she is actually
+          more complex than Raskolnikov — but because she does not have a hidden
+          assumption that she is exempt from the constraints that apply to everyone else.
+          She is fully present in the reality she lives in, including its pain, without
+          constructing a narrative that elevates her above accountability.
+        </p>
+
+        <p>
+          In a team or classroom, this is the person who absorbs pressure without
+          redirecting it onto others. Who makes mistakes and names them. Who does not
+          need a theory of superiority to maintain their sense of worth. They are not
+          passive — Sonya is one of the most active agents in the novel — but their
+          agency does not require anyone else to be less than them.
+        </p>
+
+        <h2>How I apply this to my own environment</h2>
+
+        <p>
+          Two lessons from this novel that I find directly applicable:
+        </p>
+
+        <p>
+          The first is <strong>accountability without self-destruction.</strong>
+          Raskolnikov is not ultimately destroyed by legal punishment — he is destroyed
+          by the inability to name what he did. The lesson is not that confession
+          fixes everything. The lesson is that an error you cannot name is an error
+          you cannot fix. In a team, this means creating a culture where acknowledging
+          a mistake is cheaper than hiding it — because hiding it always costs more,
+          eventually.
+        </p>
+
+        <p>
+          The second is <strong>structural empathy as a debugging tool.</strong>
+          When someone on a team consistently underperforms, misses deadlines, or
+          communicates badly, the first question should not be "what is wrong with
+          this person?" It should be: "what situation is this person in, and does
+          it resemble the conditions that produced Raskolnikov's logic?" That is not
+          a moral pardon. It is a more accurate diagnosis — and accurate diagnosis
+          is the prerequisite for any fix that actually works.
+        </p>
+
+        <h2>Why literature reaches where a manual cannot</h2>
+
+        <p>
+          A code of conduct can tell you that exploiting others is wrong. It cannot
+          put you inside the reasoning of the person who does it. Literature can.
+          Dostoyevsky does not ask us to sympathize with Raskolnikov's conclusion —
+          he asks us to understand the path that led there. And understanding that
+          path is the only way to interrupt it, in others or in ourselves, before
+          the production incident occurs.
+        </p>
+
+        <p>
+          Reading <em>Crime and Punishment</em> did not give me a checklist. It gave me
+          a better quality of attention when I encounter conflict in my environment.
+          That — a change in how you see, not just what you know — is what literature
+          that survives 160 years is built for.
+        </p>
+
+      </article>
+
+      <div class="article-tags">
+        <span>tags:</span>
+        <span class="tag purple">literature</span>
+        <span class="tag">social-analysis</span>
+        <span class="tag">Dostoyevsky</span>
+        <span class="tag amber">required-B</span>
+        <span class="tag">workplace</span>
+      </div>
+
+      <nav class="post-nav" aria-label="Post navigation">
+        <a href="critical-thinking-media-literacy.html" class="post-nav-item">
+          <span class="post-nav-dir">← previous</span>
+          <span class="post-nav-title">Debugging Information</span>
+        </a>
+        <a href="../index.html" class="post-nav-item next">
+          <span class="post-nav-dir">↑ back</span>
+          <span class="post-nav-title">All Posts</span>
+        </a>
+      </nav>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p><span class="footer-prompt">$</span> <strong>debug-and-grow</strong> &nbsp;·&nbsp; A developer's English journal</p>
+    <p style="margin-top:0.4rem;font-size:0.72rem;color:var(--text-faint);">© 2026 · Andrés Felipe Lozada Manzano · SENA Ficha 3388935</p>
+  </footer>
+
+</body>
+</html>
